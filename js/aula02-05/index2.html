@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML</title>
+</head>
+<body>
+    <h3>Cadastro de desenvolvedores</h3>
+        <p>Complete com suas informações</p>
+</body>
+
+<form >
+    <fieldset>
+       <legend>Dados Pessoais</legend>  
+    
+
+    <label for="nome-completo">nome completo</label><br>
+    <input type="text" name="nome-completo" id="nome-completo" placeholder="Ex:João da Silva">
+
+    <br><label for="idade">digite sua idade</label><br>
+    <input type="number" name="idade" id="idade" placeholder="Digite sua idade"><br>
+
+    <label for="e-mail-form">e-mail</label>
+    <br><input type="email" value="" id="e-mail-form" placeholder="xxxx@xxx.com" required><br>
+
+    <label for="telefone">telefone de contato</label><br>
+    <input type="telefone" name="telefone" id="telefone" placeholder="(00)9999-9999"><br>
+
+    <label for="endereco">endereço</label><br>
+    <input type="endereco" name="endereco" id="endereco" placeholder="Rua:xxxxxx, n 000, cidade: xxxx">
+
+    <br><label for="estado">Estado</label><br>
+    <select name="estado" id="estado">
+        <option value=""disabled selected>Selecione</option>
+        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+        <option value="Santa Catarina">Santa Catarina</option>
+        <option value="Paraná">Paraná</option>
+
+    </select>
+   </fieldset>
+
+   <fieldset>
+       <legend>Conhecimentos</legend>
+
+       <section id="frente-atuacao">
+       <label for="">Qual sua frente de atuação</label>
+
+       <input type="radio" name="devWeb" id="front" value="Front-End">
+       <label for="front">Front-End</label>
+
+       <input type="radio" name="devWeb" id="back" value="Back-End">
+       <label for="front">Back-End</label>
+
+       <input type="radio" name="devWeb" id="fullstack" value="Full Stack">
+       <label for="fullstack">Full Satcak</label><br>
+
+    </section>
+
+    <section id="nivel-senioridade">
+        <br><label for="senioridade">Nível senioridade</label>
+
+        <select name="senioridade" id="senioridade"><br>
+        <option value=""disabled selected>- Selecione -</option>
+        <option value="junior">junior</option>
+        <option value="pleno">pleno</option>
+        <option value="senior">senior</option>
+    </select>
+
+    <section id="tecnologias">
+        <br><label for="tecnologias">Selecione tecnologias que utiliza</label>
+        
+        <input type="checkbox" name="javascript" id="javascript">
+        <label for="javascript">javascript</label>
+
+        <input type="checkbox" name="css" id="css">
+        <label for="css">css</label>
+
+        <input type="checkbox" name="HTML" id="html">
+        <label for="html">HTML</label>
+
+    </section>
+
+    </section>
+   </fieldset>
+
+   <input type="submit" value="enviar dados">
+   <input type="reset" value="limpar todos dados">
+   
+</form>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 4</title>
+  </head>
+  <body>
+    <script>
+      let turno = window.prompt(
+        "Digita a primeira letra do seu turno:\n- 'M' para matutino\n- 'V' para vespertino\n- 'N' para noturno"
+      );
+      switch (turno) {
+        case "M":
+          window.alert("Bom dia!");
+          break;
+        case "V":
+          window.alert("Boa tarde!");
+          break;
+        case "N":
+          window.alert("Boa noite!");
+          break;
+        default:
+          window.alert("Opção inválida!");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício Objetos 3</title>
+  </head>
+  <body>
+    <script>
+      let aluno1 = {
+        nome: "Eder",
+        nota1: 7,
+        nota2: 8,
+      };
+      let aluno2 = {
+        nome: "João",
+        nota1: 5,
+        nota2: 9,
+      };
+
+      for (let atributos in aluno1) {
+        console.log(`${atributos} : ${aluno1[atributos]}`);
+      }
+      console.log(
+        `A média do ${aluno1.nome} é ${calculaMedia(
+          aluno1.nota1,
+          aluno1.nota2
+        )}`
+      );
+
+      for (let atributos in aluno2) {
+        console.log(`${atributos} : ${aluno2[atributos]}`);
+      }
+
+      console.log(
+        `A média do ${aluno2.nome} é ${calculaMedia(
+          aluno2.nota1,
+          aluno2.nota2
+        )}`
+      );
+
+      console.log(
+        `A média da turma é ${calculaMediaTurma(
+          aluno1.nota1,
+          aluno1.nota2,
+          aluno2.nota1,
+          aluno2.nota2
+        )}`
+      );
+
+      function calculaMedia(nota1, nota2) {
+        let media = (nota1 + nota2) / 2;
+        return media;
+      }
+
+      function calculaMediaTurma(nota1, nota2, nota3, nota4) {
+        let media = (nota1 + nota2 + nota3 + nota4) / 4;
+        return media;
+      }
+    </script>
+  </body>
+</html>

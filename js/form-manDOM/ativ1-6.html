@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Form e Manipulação DOM</title>
+</head>
+ <script src="ativ1-6.js"></script>
+<body>
+
+    <h1>Formulário</h1>
+
+    <fieldset>
+
+    <legend>Dados Pessoais</legend>
+    
+    <label for="nome-completo">nome completo</label>
+    <input type="text" name="nome-completo" id="nome-completo" placeholder="Ex:João da Silva" ><br>
+
+    <br><label for="endereco">endereço</label>
+    <input type="endereco" name="endereco" id="endereco" placeholder="Rua:xxxxxx, n 000" ><br>
+
+    <br><label for="cidade">cidade</label>
+    <input type="cidade" name="cidade" id="cidade" placeholder="digite o nome da cidade" ><br>
+
+    <br><label for="estado">Estado</label>
+    <select name="estado" id="estado" required>
+        <option value="" disabled selected>Selecione</option>
+        <option value="acre">Acre</option>
+        <option value="alagoas">Alagoas</option>
+        <option value="amapá">Amapá</option>
+        <option value="amazonas">Amazonas</option>
+        <option value="bahia">Bahia</option>
+        <option value="ceará">Ceará</option>
+        <option value="distrito federal">Distrito Federal</option>
+        <option value="espírito santo">Espírito Santo</option>
+        <option value="goiás">Goiás</option>
+        <option value="maranhão">Maranhão</option>
+        <option value="mato grosso">Mato Grosso</option>
+        <option value="mato grosso do sul">Mato Grosso do Sul</option>
+        <option value="minas gerais">Minas Gerais</option>
+        <option value="pará">Pará</option>
+        <option value="paraíba">Paraíba</option>
+        <option value="paraná">Paraná</option>
+        <option value="pernambuco">Pernambuco</option>
+        <option value="piauí">Piauí</option>
+        <option value="rio de janeiro">Rio de Janeiro</option>
+        <option value="rio grande do norte">Rio Grande do Norte</option>
+        <option value="rio grande do sul">Rio Grande do Sul</option>
+        <option value="rondônia">Rondônia</option>
+        <option value="roraima">Roraima</option>
+        <option value="santa catarina">Santa Catarina</option>
+        <option value="são paulo">São Paulo</option>
+        <option value="sergipe">Sergipe</option>
+        <option value="tocantins">Tocantins</option>
+    </select>
+
+</fieldset>
+
+        <fieldset>
+        <legend>Dados Profissionais</legend>
+
+        <div>
+        
+        <label for="naturezaCargo">Natureza do Cargo</label><br>
+               
+        <input type="radio" name="gerencia" id="gerencia">
+        <label for="gerencia">Gerência</label>
+       
+        <input type="radio" name="financeiro" id="financeiro">
+        <label for="financeiro">Financeiro</label>
+        
+        <input type="radio" name="recepcao" id="recepcao">
+        <label for="recepcao">Recepção</label>
+
+        <input type="radio" name="adm" id="adm">
+        <label for="adm">Administrativo</label>
+        
+        <input type="radio" name="juridico" id="juridico">
+        <label for="juridico">Jurídico</label>
+
+        </div>
+
+    </fieldset>
+    
+    <br>
+
+    <label for="">Área de interesse</label>
+
+    <div>
+        <input type="checkbox" name="computacao" value="computacao" class="area-interesse">
+        <label for="computacao">Computação</label>
+
+        <input type="checkbox" name="biologia" value="biologia" class="area-interesse">
+        <label for="biologia">Biologia</label>
+
+        <input type="checkbox" name="meio-ambiente" value="meio-ambiente" class="area-interesse">
+        <label for="meio-ambiente">Meio Ambiente</label>
+
+        <input type="checkbox" name="engenharia" value="engenharia" class="area-interesse">
+        <label for="engenharia">Engenharia</label>
+
+        <input type="checkbox" name="historia" value="historia" class="area-interesse">
+        <label for="historia">História</label>
+    </div>
+
+    <br><label for="curriculo">Mini-Currículo:</label><br>
+    <textarea name="curriculo" id="curriculo" cols="50" rows="5"></textarea>
+
+</fieldset>
+
+<br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+           
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hellouuu Growdever'sss, muito bom dia xDD</h1>
+
+    <script>
+
+        // declaração de um array
+        let frutas = [
+            'maça',      // posição 0
+            'bergamota', // posição 1
+            'uva'        // posição 2
+        ]
+
+        // document.write(frutas[1] + '<br>')
+        // console.log(frutas)
+
+        // adiciona o valor quando o indice não existe
+        frutas[3] = 'laranja'
+
+        // document.write(frutas + '<br>')
+        // console.log(frutas+ '<br>')
+
+        // adiciona o valor no final do array
+        frutas.push('banana')
+
+        // atualiza o valor quando a posição já existe
+        frutas[2] = 'Pessego'
+
+        document.write(frutas)
+        console.log(frutas)
+
+        // para(inicialização, condição, incremento)
+        // para(inteiro contador = 0; contador < 10; contador++)
+
+        // for(inicialização, condição, incremento)
+        document.write('<br>')
+
+        for(let contador = 0; contador < frutas.length; contador++) {
+            document.write(`${contador+1} - ${frutas[contador]} <br>`)
+        }
+
+        document.write('<br>')
+
+        let condicao = 0
+        while(condicao < frutas.length){
+            document.write(`${frutas[condicao]},`)
+            condicao++
+            // condicao = condicao + 1
+        }
+
+
+    </script>
+    
+</body>
+</html>
+

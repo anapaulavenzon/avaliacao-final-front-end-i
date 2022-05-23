@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício Funções 4</title>
+  </head>
+  <body>
+    <script>
+      let nota1 = Number(window.prompt("Digite a nota 1: "));
+      let nota2 = Number(window.prompt("Digite a nota 2: "));
+      let nota3 = Number(window.prompt("Digite a nota 3: "));
+      let nome = window.prompt("Digite o nome do aluno: ");
+
+      function calcularMedia(nota1, nota2, nota3, nome) {
+        let media = (nota1 + nota2 + nota3) / 3;
+        console.log(
+          `Nota 1: ${nota1.toFixed(2)}, nota 2: ${nota2.toFixed(
+            2
+          )} e nota 3: ${nota3.toFixed(2)}. `
+        );
+        alert(`${nome}, sua média é ${media.toFixed(2)}.`);
+      }
+
+      calcularMedia(nota1, nota2, nota3, nome);
+    </script>
+  </body>
+</html>

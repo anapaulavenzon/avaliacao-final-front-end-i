@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo getElementsByTagName</title>
+</head>
+<body>
+    <div>class = "texto-do-site>Texto 1</div>
+    <div>Texto 1</div>
+    <div>class = "texto-do-site>Texto 1</div>
+    <div>>Texto 1</div>
+    <div>class = "texto-do-site>Texto 1</div>
+    
+    <button class="botao1">CLIQUE EM MIM</button>
+    <button>CLIQUE EM MIM</button>
+    <button class = "botao-Padrao">CLIQUE EM MIM</button>
+    <button>CLIQUE EM MIM</button>
+    <script>
+
+    let minhasDivs = document.getElementsByTagName('div');
+    console.log(minhasDivs)
+
+    let minhhasClasses = document.getElementsByClassName('texto-do-site');
+    console.log(minhhasClasses)
+
+    let minhasDivsComClasse = document.querySelectorAll('div.texto-do-site');
+    console.log(minhasDivsComClasse)
+
+    for (const elemento of minhhasClasses){
+        elemento.setAttribute('class', 'outra-classe');
+        let x = elemento.getAttribute('class');
+        console.log(x)
+     
+    }
+
+    let botaoPadrao = document.querySelectorAll('button.botao-Padrao');
+
+     for (const elemento of botaoPadrao) {
+         elemento.setAttribute('disable','true');
+
+         /*elemento.setAttribute('style','display: none');*/
+         
+     }
+     let todosBotoes = document.getElementsByName('button');
+     for( const elemento of todosBotoes){
+         elemento.classList.add('outra-classe');
+         elemento.classList.remove('botao-padrao')
+         elemento.classList.toggle('botaoPadrao')
+         elemento.classList.toggle('outra-classe')
+     }
+
+</script>
+
+</body>
+</html>

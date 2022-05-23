@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício Objetos 4</title>
+  </head>
+  <body>
+    <script>
+      let alunos = [
+        {
+          nome: "João",
+          idade: 18,
+          skills: ["JavaScript", "React"],
+        },
+        {
+          nome: "Lucas",
+          idade: 24,
+          skills: ["TypeScript"],
+        },
+        {
+          nome: "Eder",
+          idade: 30,
+          skills: ["React"],
+        },
+        {
+          nome: "Claudia",
+          idade: 42,
+          skills: ["JavaScript", "TypeScript"],
+        },
+        {
+          nome: "Maria",
+          idade: 35,
+          skills: ["JavaScript"],
+        },
+      ];
+
+      let alunosEncontrados = buscaSkill(alunos, "JavaScript");
+
+      console.log(alunosEncontrados);
+
+      function buscaSkill(turma, skill) {
+        //MODO 1 DE FAZER
+        // let alunoscomskill = [];
+
+        // for (const posicaoTurma in turma) {
+        //   for (const posicaoSkill in turma[posicaoTurma].skills) {
+        //     if (turma[posicaoTurma].skills[posicaoSkill] === skill) {
+        //       alunocomskill.push(turma[posicaoTurma]);
+        //     }
+        //   }
+        // }
+
+        //MODO 2 DE FAZER
+        // let alunoscomskill = turma.filter((aluno) => {
+        //   return aluno.skills.find((skillsaluno) => skillsaluno === skill);
+        // });
+
+        //MODO 3 DE FAZER
+        let alunoscomskill = turma.filter((aluno) =>
+          aluno.skills.some((skillaluno) => {
+            return skillaluno === skill;
+          })
+        );
+
+        return alunoscomskill;
+      }
+    </script>
+  </body>
+</html>

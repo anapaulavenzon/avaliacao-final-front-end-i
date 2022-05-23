@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplos</title>
+</head>
+
+<body>
+    <div>Texto 1</div>
+    <div>Texto 2</div>
+    <div>Texto 3</div>
+    <div>Texto 4</div>
+    <div>Texto 5</div>
+    <div>Texto 6</div>
+
+    <button class="botao-padrao">CLIQUE EM MIM!</button><br>
+    <button>CLIQUE EM MIM!</button><br>
+    <button class="botao-padrao">CLIQUE EM MIM!</button><br>
+    <button>CLIQUE EM MIM!</button><br>
+
+
+
+
+    <script>
+        //getElementbyId = apenas 1 elemento
+        //querySelector('div') = apenas 1 elemento
+
+        //querySelectorAll('div') = qual seria o tamanho do NodeList?
+        //getElementsByTagName('div')
+        //getElementsByClassName('texto-so-site') = qual o tamanho do NodeList?
+
+        // retorna todos os elementos HTML que forem <div>
+        let minhasDivs = document.getElementsByTagName('div');
+        console.log(minhasDivs);
+
+        let minhasClasses = document.getElementsByClassName('texto-do-site');
+        console.log(minhasClasses);
+
+        let minhasDivsComClasse = document.querySelectorAll('div.texto-do-site');
+        console.log(minhasDivsComClasse);
+
+        for (const elemento of minhasDivs) {
+            elemento.setAttribute('class', 'texto-do-site');
+
+            let x = elemento.getAttribute('class');
+
+            console.log(x);
+        }
+
+        let botaoPadrao = document.querySelectorAll('button.botao-padrao');
+
+        for (const elemento of botaoPadrao) {
+            elemento.setAttribute('disable', 'true');
+
+        }
+
+        // MANIPULANDO O ATRIBUTO CLASS -> ClassList -> add(), remove(), toggle()
+
+        let todosBotoes = document.getElementsByTagName('button');
+
+        for (const elemento of todosBotoes) {
+            elemento.classList.add('outra-classe');
+            elemento.classList.remove('botao-padrao');
+
+            //VE SE EXISTE . EXISTE? SE SIM REMOVE SE NAO ADICIONA
+            elemento.classList.toggle('botao-padrao');
+            elemento.classList.toggle('outra-classe');
+
+            console.log(elemento.classList);
+        }
+
+    </script>
+
+</body>
+
+</html>

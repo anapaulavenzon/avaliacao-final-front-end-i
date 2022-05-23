@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+}
+
+.container {
+
+    background-color: black;
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  
+  .square {
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .magenta {
+    background-color: magenta;
+    align-self: flex-end;
+       
+  }
+  
+  .mostarda {
+    background-color: rgb(121, 121, 5);
+    
+   }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 3</title>
+  </head>
+  <body>
+    <script>
+      let sexo = window.prompt("Digite seu sexo: ");
+      let altura = parseFloat(window.prompt("Digite sua altura: "));
+
+      if (sexo == "Feminino" || sexo == "feminino" || sexo == "FEMININO") {
+        let peso_ideal = 0.0;
+        peso_ideal = 62.1 * altura - 44.7;
+        window.alert(
+          `Você é uma mulher que mede ${altura}m e seu peso ideal é ${peso_ideal.toFixed(
+            2
+          )}Kg.`
+        );
+      } else if (
+        sexo == "Masculino" ||
+        sexo == "masculino" ||
+        sexo == "Masculino"
+      ) {
+        let peso_ideal = 0.0;
+        peso_ideal = 72.7 * altura - 58;
+        window.alert(
+          `Você é um homem que mede ${altura}m e seu peso ideal é ${peso_ideal.toFixed(
+            2
+          )}Kg.`
+        );
+      } else {
+        window.alert("Opção inválida!");
+      }
+    </script>
+  </body>
+</html>

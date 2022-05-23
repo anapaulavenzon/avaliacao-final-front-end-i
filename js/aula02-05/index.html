@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário HTML tag < form> </title>
+</head>
+<body>
+   
+        <h3>Cadastro de desenvolvedores</h3>
+        <p>Complete com suas informações</p>
+    
+        <form>
+
+            
+            <label for="nome-form">texto</label>
+            <br><input type="text" value="" id="nome-form" placeholder="Nome completo" required><br>
+
+            <label for="e-mail-form">e-mail</label>
+            <br><input type="email" value="" id="e-mail-form" placeholder="xxxx@xxx.com" required><br>
+
+            <label for="senha-form">senha</label>
+            <br><input type="password" value="" id="senha-form" placeholder="senha:letras e números" required><br>
+
+            <label for="idade-form">idade</label>
+            <br><input type="number" value="" id="idade-form" placeholder="digite sua idade" required><br>
+
+            <label for="data-nascimento">data de nascimento</label>
+            <br><input type="date" name="data" id="data-nascimento" required><br><br>
+
+
+            <label for="anexo">Selecione um arquivo</label>
+            <br><input type="file" name="anexo"><br>
+
+
+            <br><label for="tecnologia">Selecione a tecnologia</label><br>
+            
+            <br><input type="checkbox" name="javascript" class="tecnologia" value="javascript" checked>
+            <label for="javascript">javascript</label>
+
+            <br><input type="checkbox" name="HTML" id="" class="tecnologia" value="HTML" checked>
+            <label for="HTML">HTML</label>
+
+            <br><input type="checkbox" name="Front-end" class="tecnologia" value="Front-end" checked>
+            <label for="Front-end">Front-end</label>
+
+            <br><input type="checkbox" name="Back-end" class="tecnologia" value="Back-end" checked>
+            <label for="Back-end">Back-end</label><br>
+
+            
+            <br><label for="">sexo</label>
+
+            <br><input type="radio" name="sexo" value="feminino">
+            <label for="feminino">feminino</label>
+
+            <br><input type="radio" name="sexo" value="masculino">
+            <label for="masculino">masculino</label>
+
+            <br><input type="radio" name="sexo" value="nenhuma opção acima">
+            <label for="sem identificacao">nenhuma opção</label><br><br>
+
+            <label for="texto-experiencia">Fale sobre suas experiências</label><br>
+            <br><textarea name="texto-experiencia" cols="30" rows="10" placeholder="Digite aqui seu texto"></textarea><br>
+
+            
+            <br><input type="submit" value="Enviar"><br>
+        
+
+           
+    </form>
+    
+</body>
+</html>

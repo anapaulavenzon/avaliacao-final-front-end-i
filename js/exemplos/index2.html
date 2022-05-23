@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+    <style>
+        div#area {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="area">
+        Interagir...
+    </div>
+
+    <script>
+
+        //DIGO PRO JAVASCRIPT QUAL O ELEMENTO QUE ELE VAI PEGAR DO HTML (DOM)
+        /*  let area = document.getElementById('area'); */
+        let area = document.querySelector('#area');
+
+        /* area.addEventListener('click', clicar); */
+        /* area.addEventListener('mousemove', moverMouse); */
+        area.addEventListener('mouseenter', entrar);
+        area.addEventListener('mouseout', sair);
+        area.addEventListener('mousedown', segurarBotaoMouse);
+        area.addEventListener('mouseup', soltarBotaoMouse);
+
+
+        //1º 'click'
+        function clicar() {
+            area.innerHTML = 'Clicou!';
+            area.style.background = 'red';
+        }
+
+        //2º 'mousemove'
+        function moverMouse() {
+            area.innerHTML = 'Moveu o mouse!';
+            area.style.background = 'yellow';
+            area.style.color = 'black';
+        }
+
+        //3º 'mouseenter'
+        function entrar() {
+            area.innerHTML = 'Entrou na div!';
+            area.style.background = 'blue';
+        }
+
+        //4º 'mouseout'
+        function sair() {
+            area.innerHTML = 'Saiu na div!';
+            area.style.background = 'purple';
+        }
+
+
+        //5º 'mousedown'
+        function segurarBotaoMouse() {
+            area.innerHTML = 'Está segurando o botão do mouse!';
+            area.style.background = 'red';
+        }
+
+        //6º 'mouseup'
+        function soltarBotaoMouse() {
+            area.innerHTML = 'Soltou o botão do mouse!';
+            area.style.background = 'pink';
+        }
+
+
+    </script>
+
+</body>
+
+</html>

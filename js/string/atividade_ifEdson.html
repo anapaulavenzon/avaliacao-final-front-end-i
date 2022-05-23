@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade IF Edson</title>
+</head>
+<body>
+    <script>
+        var precoMacas = 0.30
+        var quantidadeDoCliente = Number(prompt("Olá querido cliente, seja bem vindo. Quantas maças você quer?"))
+
+        if(quantidadeDoCliente >= 12){
+            preçoMacas = 0.25
+        }
+        var precoAPagar = quantidadeDoCliente * precoMacas
+
+        document.write(`O valor a pagar é: ${precoAPagar.toFixed(2)}`)
+
+    </script>
+</body>
+</html>

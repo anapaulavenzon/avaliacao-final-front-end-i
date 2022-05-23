@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 9</title>
+  </head>
+  <body>
+    <script>
+      let numero = 14;
+      let soma = 13;
+      let media = 0.0;
+      let qtd_numeros = 0;
+      do {
+        document.write(`${soma} + ${numero} `);
+        soma += numero; // soma = soma + numero
+        document.write(`= ${soma}<br>`);
+        numero++;
+        qtd_numeros++;
+      } while (numero <= 73);
+
+      media = soma / qtd_numeros;
+      document.write(
+        `<br>A média de ${soma} / ${qtd_numeros} = ${media.toFixed(2)}<br>`
+      );
+    </script>
+  </body>
+</html>

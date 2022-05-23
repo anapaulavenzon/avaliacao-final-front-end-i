@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+
+    <form id="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="campo-nome">Digite o seu nome: </label>
+            <input type="text" name="campo-nome" id="" required placeholder="Ex: João da Silva"><br><br>
+
+            <label for="campo-idade">Idade: </label>
+            <input type="number" name="campo-idade" id="" required placeholder="18"><br><br>
+
+            <label for="campo-email">E-mail: </label>
+            <input type="email" name="campo-email" id="" required placeholder="Ex: joao@silva.com"><br><br>
+
+            <label for="campo-senha">Senha: </label>
+            <input type="password" name="campo-senha" id="" required placeholder="Digite uma senha forte"><br><br>
+
+            <br><br>
+            <div>
+                <label for="campo-estado">Selecione Estado</label>
+                <select name="campo-estado" id="" required>
+                    <option value="" disabled selected> - Selecione - </option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="PR">Paraná</option>
+                    <option value="SP">São Paulo</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados Profissionais</legend>
+
+            <br><br>
+            <div>
+                <label for="tecnologias">Selecione as Tecnologias</label><br>
+
+
+                <input type="checkbox" name="tecnologias" id="tecnologia1" value="HTML" checked>
+                <label for="tecnologia1">HTML</label>
+
+
+                <input type="checkbox" name="tecnologias" id="tecnologia2" value="CSS" checked>
+                <label for="tecnologia2">CSS</label>
+
+
+                <input type="checkbox" name="tecnologias" id="tecnologia3" value="Javascript">
+                <label for="tecnologia3">Javascript</label>
+
+
+                <input type="checkbox" name="tecnologias" id="tecnologia4" value="Typescript">
+                <label for="tecnologia4">Typescript</label>
+            </div>
+            <br><br>
+            <div>
+                <label for="cargo">Selecione sua Ocupação</label><br>
+
+                <input type="radio" name="cargo" id="cargo1" value="front-end" checked>
+                <label for="cargo1">Front-End</label>
+
+                <input type="radio" name="cargo" id="cargo2" value="back-end">
+                <label for="cargo2">Back-End</label>
+
+
+                <input type="radio" name="cargo" id="cargo3" value="full-stack">
+                <label for="cargo3">Full Stack</label>
+            </div>
+
+            <br><br>
+            <div>
+                <label for="descricao-profissional">Escreva sobre você:</label> <br>
+                <textarea name="descricao-profissional" id="" cols="50" rows="5" maxlength="300"></textarea>
+
+                <br><br>
+                <label for="curriculo-anexo">Anexe seu curriculo:</label>
+                <input type="file" name="curriculo-anexo" id="">
+            </div>
+        </fieldset>
+
+        <br><br>
+        <input type="submit" value="Enviar submit">
+        <input type="button" value="Enviar button">
+
+        <button type="submit">Button Submit Enviar</button>
+        <button type="button">Button Enviar</button>
+
+    </form>
+
+
+</body>
+
+</html>

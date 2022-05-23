@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hellouuu Growdever'sss, muito bom dia xDD</h1>
+
+    <script>
+
+        // crie uma lista com 7 produtos eletrodomesticos
+        // pergunte para o usuário qual produto ele quer comprar
+        // verifique se o produto está disponível
+        // e se estiver mostre a mensagem parabenizando pela
+        // compra
+
+        let produtos = [
+            'Geladeira', // 0
+            'Fogão',     // 1
+            'Microondas',// 2
+            'Cafeteira', // 3
+            'TV',        // 4
+            'Torradeira',// 5
+            'Grill'      // 6
+        ]
+
+        const produtoUsuario = prompt('Me fala o produto que tu quer')
+
+        const indiceDoProduto = produtos.findIndex(function (produtoDaLista){
+            return produtoDaLista.toLowerCase() === produtoUsuario.toLowerCase()
+        })
+
+        document.write(indiceDoProduto + '<br>')
+
+        if(indiceDoProduto >= 0){
+            document.write(`Parabéns pela compra do ${produtos[indiceDoProduto]}`)
+        } else {
+            document.write(`Infelizmente não temos o produto ${produtoUsuario}`)
+        }
+
+
+    </script>
+    
+</body>
+</html>

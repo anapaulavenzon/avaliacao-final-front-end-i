@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade If</title>
+</head>
+<body>
+    <script>
+
+        var preco = 0.30
+        var qt = Number(prompt("Seja bem vindo. Quantas maças você quer?"))
+
+        if(qt >= 12){
+            preco = 0.25
+        }
+        var totalAPagar = qt * preco
+
+        document.write(`O valor a pagar é: ${totalAPagar.toFixed(2)}`)
+
+    </script>
+</body>
+</html>
